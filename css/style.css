@@ -243,6 +243,15 @@ body {
   line-height: 68px;
 }
 
+*::selection {
+  background-color: rgb(4, 140, 140);
+}
+
+.title::selection {
+  color: aqua;
+  background-color: none;
+  background: none;
+}
 .hero__descr {
   margin-bottom: 92px;
   max-width: 34%;
