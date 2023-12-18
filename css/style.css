@@ -728,7 +728,7 @@ input[type="number"]::-webkit-outer-spin-button {
   transition: background 0.3s ease-in-out;
 }
 
-.contacts__input:focus {
+.contacts__input:focus-visible {
   background: #ECECEC;
   /* Фон при фокусе */
   outline: none;
@@ -739,15 +739,11 @@ input[type="number"]::-webkit-outer-spin-button {
   /* Цвет текста-подсказки */
 }
 
-.contacts__input:hover {
+.contacts__input:hover:not(:focus-visible) {
   background: #ECECEC;
   /* Фон при наведении, без фокуса */
 }
 
-.contacts__input:active {
-  background: #fff;
-  /* Фон при активации (нажатии) без фокуса */
-}
 
 .contacts__btn {
   text-align: center;
